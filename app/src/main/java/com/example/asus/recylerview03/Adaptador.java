@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -20,6 +21,8 @@ public class Adaptador extends RecyclerView.Adapter<viewHolder> {
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View vista = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_item, parent, false);
+
+
         return new viewHolder(vista,ListaObjeto);
     }
 
